@@ -7,16 +7,49 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Start VC!")
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func scanFace(_ sender: UIButton) {
+        
+        print("did tap!")
+        
+        let context:LAContext = LAContext()
+        
+        context.localizedFallbackTitle = ""
+        
+        if(context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)) {
+            print("could evaluate policy!")
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Verify Device User Identity") { (success, error) in
+                DispatchQueue.main.async {
+                    if success {
+                        let alert = UIAlertController(title: "Success", message: "You are the correct user!", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default) {(action: UIAlertAction) -> Void in
+                            alert.removeFromParent()
+                            self.performSegue(withIdentifier: "startToOpenWeb", sender: nil)
+                        })
+                        self.present(alert, animated: true, completion: nil)
+                    } else {
+                        let alert = UIAlertController(title: "Error", message: "You are not the right user!", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default) {(action: UIAlertAction) -> Void in
+                            alert.removeFromParent()
+                        })
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        } else {
+            print("couldn't evaluate policy")
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

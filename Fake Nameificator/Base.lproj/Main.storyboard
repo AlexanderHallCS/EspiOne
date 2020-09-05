@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="d9S-1m-v9f">
             <objects>
-                <viewController id="fA5-Lu-kES" sceneMemberID="viewController">
+                <viewController id="fA5-Lu-kES" customClass="StartViewController" customModule="Fake_Name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZI-iG-Zfg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,11 +18,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartScreenBackground4" translatesAutoresizingMaskIntoConstraints="NO" id="ejK-vW-5wN">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="741"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-23-KqV">
-                                <rect key="frame" x="69.666666666666686" y="588" width="275" height="110"/>
-                                <state key="normal" backgroundImage="ScanFaceButton2"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-23-KqV" userLabel="ScanFaceButton">
+                                <rect key="frame" x="20" y="588" width="374" height="110"/>
+                                <state key="normal" backgroundImage="ScanThumbprintButton"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="NSt-UJ-eSU"/>
+                                    <action selector="scanFace:" destination="fA5-Lu-kES" eventType="touchUpInside" id="YgF-XB-qOj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,10 +35,13 @@
                             <constraint firstItem="ejK-vW-5wN" firstAttribute="centerX" secondItem="AZI-iG-Zfg" secondAttribute="centerX" id="Ssf-qx-R1F"/>
                             <constraint firstItem="ejK-vW-5wN" firstAttribute="width" secondItem="AZI-iG-Zfg" secondAttribute="width" id="U7x-Ej-yfu"/>
                             <constraint firstItem="ttw-zK-G53" firstAttribute="bottom" secondItem="2r5-23-KqV" secondAttribute="bottom" constant="38" id="qe5-cZ-O1z"/>
-                            <constraint firstItem="2r5-23-KqV" firstAttribute="width" secondItem="AZI-iG-Zfg" secondAttribute="width" multiplier="0.664251" id="tlB-N2-1gI"/>
+                            <constraint firstItem="2r5-23-KqV" firstAttribute="width" secondItem="AZI-iG-Zfg" secondAttribute="width" multiplier="0.664251" constant="99" id="tlB-N2-1gI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ttw-zK-G53"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="startToOpenWeb" modalTransitionStyle="crossDissolve" id="ctD-a1-wCX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDp-qe-eye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +108,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ScanFaceButton2" width="500" height="200"/>
+        <image name="ScanThumbprintButton" width="804" height="200"/>
         <image name="StartScreenBackground4" width="750" height="1334"/>
     </resources>
 </document>
