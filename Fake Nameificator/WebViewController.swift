@@ -23,6 +23,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //let myURL = URL(string: "https://fake-nameificator.uc.r.appspot.com/")
         let myURL = URL(string: "https://0e4ef622.github.io/fake-nameificator/")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)

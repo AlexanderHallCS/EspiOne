@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fA5-Lu-kES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,39 +8,91 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="d9S-1m-v9f">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fake_Name" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="fA5-Lu-kES" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AZI-iG-Zfg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-c0-sEV">
-                                <rect key="frame" x="158.5" y="438" width="97" height="30"/>
-                                <state key="normal" title="Open Website"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartScreenBackground4" translatesAutoresizingMaskIntoConstraints="NO" id="ejK-vW-5wN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="741"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-23-KqV">
+                                <rect key="frame" x="69.666666666666686" y="588" width="275" height="110"/>
+                                <state key="normal" backgroundImage="ScanFaceButton2"/>
                                 <connections>
-                                    <segue destination="mXC-VT-pxd" kind="presentation" modalTransitionStyle="crossDissolve" id="98B-vB-ghr"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="NSt-UJ-eSU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ejK-vW-5wN" firstAttribute="height" secondItem="AZI-iG-Zfg" secondAttribute="height" constant="5" id="1wQ-QW-Ba6"/>
+                            <constraint firstItem="ejK-vW-5wN" firstAttribute="centerY" secondItem="AZI-iG-Zfg" secondAttribute="centerY" constant="2.5" id="Gq5-nP-ki4"/>
+                            <constraint firstItem="2r5-23-KqV" firstAttribute="centerX" secondItem="ttw-zK-G53" secondAttribute="centerX" id="HhH-yf-BiQ"/>
+                            <constraint firstItem="2r5-23-KqV" firstAttribute="height" secondItem="AZI-iG-Zfg" secondAttribute="height" multiplier="0.149457" id="Rs1-19-E4I"/>
+                            <constraint firstItem="ejK-vW-5wN" firstAttribute="centerX" secondItem="AZI-iG-Zfg" secondAttribute="centerX" id="Ssf-qx-R1F"/>
+                            <constraint firstItem="ejK-vW-5wN" firstAttribute="width" secondItem="AZI-iG-Zfg" secondAttribute="width" id="U7x-Ej-yfu"/>
+                            <constraint firstItem="ttw-zK-G53" firstAttribute="bottom" secondItem="2r5-23-KqV" secondAttribute="bottom" constant="38" id="qe5-cZ-O1z"/>
+                            <constraint firstItem="2r5-23-KqV" firstAttribute="width" secondItem="AZI-iG-Zfg" secondAttribute="width" multiplier="0.664251" id="tlB-N2-1gI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ttw-zK-G53"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDp-qe-eye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613.04347826086962" y="115.7608695652174"/>
+        </scene>
+        <!--Open Web View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OpenWebViewController" customModule="Fake_Name" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-c0-sEV">
+                                <rect key="frame" x="158.66666666666666" y="353" width="97" height="30"/>
+                                <state key="normal" title="Open Website"/>
+                                <connections>
+                                    <segue destination="mXC-VT-pxd" kind="presentation" modalTransitionStyle="crossDissolve" id="98B-vB-ghr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGI-9v-1lw">
+                                <rect key="frame" x="54" y="176" width="308" height="40.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pretend the face was scanned and it was the right face">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yGI-9v-1lw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="1" id="63N-sS-FDH"/>
+                            <constraint firstItem="yGI-9v-1lw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="6Rb-ze-Cgw"/>
                             <constraint firstItem="wwM-c0-sEV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="IYX-xd-cLC"/>
                             <constraint firstItem="wwM-c0-sEV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XQ4-fv-SCi"/>
+                            <constraint firstItem="yGI-9v-1lw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176" id="mct-xb-lzU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QYc-VS-uPA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="116"/>
+            <point key="canvasLocation" x="137.68115942028987" y="115.7608695652174"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="IJI-nr-xKs">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="mXC-VT-pxd" customClass="WebViewController" customModule="Fake_Name" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BZj-ka-6Zy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fNE-54-fWp"/>
@@ -52,4 +104,8 @@
             <point key="canvasLocation" x="967" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ScanFaceButton2" width="500" height="200"/>
+        <image name="StartScreenBackground4" width="750" height="1334"/>
+    </resources>
 </document>
