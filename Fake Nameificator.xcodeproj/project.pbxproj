@@ -13,10 +13,11 @@
 		11F6419D25042AA20014C273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F6419B25042AA20014C273 /* Main.storyboard */; };
 		11F6419F25042AA40014C273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F6419E25042AA40014C273 /* Assets.xcassets */; };
 		11F641A225042AA40014C273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F641A025042AA40014C273 /* LaunchScreen.storyboard */; };
+		11F641AA25042AB30014C273 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F641A925042AB30014C273 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11F6419225042AA20014C273 /* Fake Nameificator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fake Nameificator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F6419225042AA20014C273 /* Fake Name.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fake Name.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F6419525042AA20014C273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F6419725042AA20014C273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11F6419925042AA20014C273 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		11F6419E25042AA40014C273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F641A125042AA40014C273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11F641A325042AA40014C273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F641A925042AB30014C273 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		11F6419325042AA20014C273 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11F6419225042AA20014C273 /* Fake Nameificator.app */,
+				11F6419225042AA20014C273 /* Fake Name.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +61,7 @@
 				11F6419525042AA20014C273 /* AppDelegate.swift */,
 				11F6419725042AA20014C273 /* SceneDelegate.swift */,
 				11F6419925042AA20014C273 /* ViewController.swift */,
+				11F641A925042AB30014C273 /* WebViewController.swift */,
 				11F6419B25042AA20014C273 /* Main.storyboard */,
 				11F6419E25042AA40014C273 /* Assets.xcassets */,
 				11F641A025042AA40014C273 /* LaunchScreen.storyboard */,
@@ -84,7 +87,7 @@
 			);
 			name = "Fake Nameificator";
 			productName = "Fake Nameificator";
-			productReference = 11F6419225042AA20014C273 /* Fake Nameificator.app */;
+			productReference = 11F6419225042AA20014C273 /* Fake Name.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,6 +144,7 @@
 				11F6419A25042AA20014C273 /* ViewController.swift in Sources */,
 				11F6419625042AA20014C273 /* AppDelegate.swift in Sources */,
 				11F6419825042AA20014C273 /* SceneDelegate.swift in Sources */,
+				11F641AA25042AB30014C273 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fake Name";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fake Name";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
