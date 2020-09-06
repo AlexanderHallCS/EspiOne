@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11F6419225042AA20014C273 /* Spy Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spy Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F6419225042AA20014C273 /* EspiONE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EspiONE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F6419525042AA20014C273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F6419725042AA20014C273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11F6419925042AA20014C273 /* SpyToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyToolsViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		11F6418925042AA20014C273 = {
 			isa = PBXGroup;
 			children = (
-				11F6419425042AA20014C273 /* Spy Kit */,
+				11F6419425042AA20014C273 /* EspiONE */,
 				11F6419325042AA20014C273 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		11F6419325042AA20014C273 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11F6419225042AA20014C273 /* Spy Kit.app */,
+				11F6419225042AA20014C273 /* EspiONE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11F6419425042AA20014C273 /* Spy Kit */ = {
+		11F6419425042AA20014C273 /* EspiONE */ = {
 			isa = PBXGroup;
 			children = (
 				11F6419525042AA20014C273 /* AppDelegate.swift */,
@@ -70,15 +70,15 @@
 				11F641A025042AA40014C273 /* LaunchScreen.storyboard */,
 				11F641A325042AA40014C273 /* Info.plist */,
 			);
-			path = "Spy Kit";
+			path = EspiONE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11F6419125042AA20014C273 /* Spy Kit */ = {
+		11F6419125042AA20014C273 /* EspiONE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11F641A625042AA40014C273 /* Build configuration list for PBXNativeTarget "Spy Kit" */;
+			buildConfigurationList = 11F641A625042AA40014C273 /* Build configuration list for PBXNativeTarget "EspiONE" */;
 			buildPhases = (
 				11F6418E25042AA20014C273 /* Sources */,
 				11F6418F25042AA20014C273 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "Spy Kit";
+			name = EspiONE;
 			productName = "Fake Nameificator";
-			productReference = 11F6419225042AA20014C273 /* Spy Kit.app */;
+			productReference = 11F6419225042AA20014C273 /* EspiONE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11F6418D25042AA20014C273 /* Build configuration list for PBXProject "Spy Kit" */;
+			buildConfigurationList = 11F6418D25042AA20014C273 /* Build configuration list for PBXProject "EspiONE" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11F6419125042AA20014C273 /* Spy Kit */,
+				11F6419125042AA20014C273 /* EspiONE */,
 			);
 		};
 /* End PBXProject section */
@@ -300,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
-				PRODUCT_NAME = "Spy Kit";
+				PRODUCT_NAME = EspiONE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -318,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
-				PRODUCT_NAME = "Spy Kit";
+				PRODUCT_NAME = EspiONE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -327,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11F6418D25042AA20014C273 /* Build configuration list for PBXProject "Spy Kit" */ = {
+		11F6418D25042AA20014C273 /* Build configuration list for PBXProject "EspiONE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11F641A425042AA40014C273 /* Debug */,
@@ -336,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11F641A625042AA40014C273 /* Build configuration list for PBXNativeTarget "Spy Kit" */ = {
+		11F641A625042AA40014C273 /* Build configuration list for PBXNativeTarget "EspiONE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11F641A725042AA40014C273 /* Debug */,
