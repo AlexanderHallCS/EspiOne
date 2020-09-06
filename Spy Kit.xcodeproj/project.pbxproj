@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11F6419125042AA20014C273 /* Fake Nameificator */ = {
+		11F6419125042AA20014C273 /* Spy Kit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11F641A625042AA40014C273 /* Build configuration list for PBXNativeTarget "Fake Nameificator" */;
+			buildConfigurationList = 11F641A625042AA40014C273 /* Build configuration list for PBXNativeTarget "Spy Kit" */;
 			buildPhases = (
 				11F6418E25042AA20014C273 /* Sources */,
 				11F6418F25042AA20014C273 /* Frameworks */,
@@ -88,7 +88,7 @@
 			);
 			dependencies = (
 			);
-			name = "Fake Nameificator";
+			name = "Spy Kit";
 			productName = "Fake Nameificator";
 			productReference = 11F6419225042AA20014C273 /* Spy Kit.app */;
 			productType = "com.apple.product-type.application";
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11F6418D25042AA20014C273 /* Build configuration list for PBXProject "Fake Nameificator" */;
+			buildConfigurationList = 11F6418D25042AA20014C273 /* Build configuration list for PBXProject "Spy Kit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11F6419125042AA20014C273 /* Fake Nameificator */,
+				11F6419125042AA20014C273 /* Spy Kit */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
 				PRODUCT_NAME = "Spy Kit";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,14 +320,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
 				PRODUCT_NAME = "Spy Kit";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11F6418D25042AA20014C273 /* Build configuration list for PBXProject "Fake Nameificator" */ = {
+		11F6418D25042AA20014C273 /* Build configuration list for PBXProject "Spy Kit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11F641A425042AA40014C273 /* Debug */,
@@ -336,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11F641A625042AA40014C273 /* Build configuration list for PBXNativeTarget "Fake Nameificator" */ = {
+		11F641A625042AA40014C273 /* Build configuration list for PBXNativeTarget "Spy Kit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11F641A725042AA40014C273 /* Debug */,
