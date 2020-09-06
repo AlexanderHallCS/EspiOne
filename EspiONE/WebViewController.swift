@@ -11,7 +11,7 @@ import WebKit
 
 class WebViewController: UIViewController, WKNavigationDelegate {
 
-    var webView: WKWebView!
+    @IBOutlet var webView: WKWebView!
     
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
@@ -28,8 +28,21 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
         webView.allowsBackForwardNavigationGestures = true
+        createBackButton()
     }
 
+    private func createBackButton() {
+        let button = UIButton(type: .system) as UIButton
+        button.setBackgroundImage(UIImage(systemName: "arrowtriangle.left"), for: .normal)
+        button.frame = CGRect(x: 20, y: 20, width: 50, height: 40)
+        button.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
+        self.view.addSubview(button)
+    }
+    
+    @objc func dismissVC() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

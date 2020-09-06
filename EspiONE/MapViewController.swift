@@ -17,13 +17,17 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         mapView.mapType = .satelliteFlyover
+        addAnnotation(named: "U.S. Embassy, London", latitude: 51.4826, longitude: 0.1322)
         
         // Do any additional setup after loading the view.
     }
     
 
     private func addAnnotation(named name: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
-        
+        let annotation = MKPointAnnotation()
+        annotation.title = name
+        annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        mapView.addAnnotation(annotation)
     }
     
     /*
