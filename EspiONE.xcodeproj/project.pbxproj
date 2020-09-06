@@ -15,6 +15,8 @@
 		11F641A225042AA40014C273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F641A025042AA40014C273 /* LaunchScreen.storyboard */; };
 		11F641AA25042AB30014C273 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F641A925042AB30014C273 /* WebViewController.swift */; };
 		11F641AC2504302B0014C273 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F641AB2504302B0014C273 /* StartViewController.swift */; };
+		11F641AE2504C1D00014C273 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F641AD2504C1D00014C273 /* MapViewController.swift */; };
+		11F641B12504C8D10014C273 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F641B02504C8D10014C273 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		11F641A325042AA40014C273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11F641A925042AB30014C273 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		11F641AB2504302B0014C273 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		11F641AD2504C1D00014C273 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		11F641B02504C8D10014C273 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F641B12504C8D10014C273 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,7 @@
 			children = (
 				11F6419425042AA20014C273 /* EspiONE */,
 				11F6419325042AA20014C273 /* Products */,
+				11F641AF2504C8D00014C273 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +70,7 @@
 				11F6419725042AA20014C273 /* SceneDelegate.swift */,
 				11F641AB2504302B0014C273 /* StartViewController.swift */,
 				11F6419925042AA20014C273 /* SpyToolsViewController.swift */,
+				11F641AD2504C1D00014C273 /* MapViewController.swift */,
 				11F641A925042AB30014C273 /* WebViewController.swift */,
 				11F6419B25042AA20014C273 /* Main.storyboard */,
 				11F6419E25042AA40014C273 /* Assets.xcassets */,
@@ -71,6 +78,14 @@
 				11F641A325042AA40014C273 /* Info.plist */,
 			);
 			path = EspiONE;
+			sourceTree = "<group>";
+		};
+		11F641AF2504C8D00014C273 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11F641B02504C8D10014C273 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F641AC2504302B0014C273 /* StartViewController.swift in Sources */,
+				11F641AE2504C1D00014C273 /* MapViewController.swift in Sources */,
 				11F6419A25042AA20014C273 /* SpyToolsViewController.swift in Sources */,
 				11F6419625042AA20014C273 /* AppDelegate.swift in Sources */,
 				11F6419825042AA20014C273 /* SceneDelegate.swift in Sources */,
@@ -294,12 +310,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PFCM63NH3Y;
-				INFOPLIST_FILE = "Fake Nameificator/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/EspiONE/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderhallcs.EspiONE;
 				PRODUCT_NAME = EspiONE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -312,12 +328,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PFCM63NH3Y;
-				INFOPLIST_FILE = "Fake Nameificator/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/EspiONE/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexanderhallcs.EspiONE;
 				PRODUCT_NAME = EspiONE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
