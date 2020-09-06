@@ -37,16 +37,22 @@ class StartViewController: UIViewController {
                         })
                         self.present(alert, animated: true, completion: nil)
                     } else {
-                        let alert = UIAlertController(title: "Error", message: "You are not the right user!", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Ok", style: .default) {(action: UIAlertAction) -> Void in
-                            alert.removeFromParent()
-                        })
-                        self.present(alert, animated: true, completion: nil)
+                        if(error!._code != LAError.userCancel.rawValue) {
+                            let alert = UIAlertController(title: "Error", message: "You are not the right user!", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Ok", style: .default) {(action: UIAlertAction) -> Void in
+                                alert.removeFromParent()
+                            })
+                            self.present(alert, animated: true, completion: nil)
+                        }
                     }
                 }
             }
         } else {
-            print("couldn't evaluate policy")
+            let alert = UIAlertController(title: "Error", message: "Too many incorrect attempts! Re-enter your phone password in settings.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default) {(action: UIAlertAction) -> Void in
+                alert.removeFromParent()
+            })
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
