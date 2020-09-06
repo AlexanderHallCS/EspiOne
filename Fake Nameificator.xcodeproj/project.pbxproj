@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11F6419225042AA20014C273 /* Spy Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spy Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F6419225042AA20014C273 /* Spy Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spy Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F6419525042AA20014C273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F6419725042AA20014C273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11F6419925042AA20014C273 /* SpyToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyToolsViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		11F6419325042AA20014C273 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11F6419225042AA20014C273 /* Spy Tools.app */,
+				11F6419225042AA20014C273 /* Spy Kit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 			);
 			name = "Fake Nameificator";
 			productName = "Fake Nameificator";
-			productReference = 11F6419225042AA20014C273 /* Spy Tools.app */;
+			productReference = 11F6419225042AA20014C273 /* Spy Kit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -300,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
-				PRODUCT_NAME = "Spy Tools";
+				PRODUCT_NAME = "Spy Kit";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexanderhallcs.Fake-Nameificator";
-				PRODUCT_NAME = "Spy Tools";
+				PRODUCT_NAME = "Spy Kit";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
