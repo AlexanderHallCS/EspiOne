@@ -42,6 +42,8 @@ class MapViewController: UIViewController {
         addAnnotation(named: "U.S. Embassy, Seoul, South Korea", latitude: 37.573138, longitude: 126.977867)
         addAnnotation(named: "U.S. Embassy, Bern, Switzerland", latitude: 46.943433, longitude: 7.438305)
         addAnnotation(named: "U.S. Embassy, Harare, Zimbabwe", latitude: -17.822858, longitude: 31.043869)
+        addAnnotation(named: "U.S. Embassy, Sao Paulo, Brazil", latitude: -23.629242, longitude: -46.697516)
+        addAnnotation(named: "U.S. Embassy, Caracas, Venezuela", latitude: 10.472736, longitude: -66.871479)
         
     }
     
