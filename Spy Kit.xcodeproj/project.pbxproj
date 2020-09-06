@@ -44,7 +44,7 @@
 		11F6418925042AA20014C273 = {
 			isa = PBXGroup;
 			children = (
-				11F6419425042AA20014C273 /* Fake Nameificator */,
+				11F6419425042AA20014C273 /* Spy Kit */,
 				11F6419325042AA20014C273 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,7 +57,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11F6419425042AA20014C273 /* Fake Nameificator */ = {
+		11F6419425042AA20014C273 /* Spy Kit */ = {
 			isa = PBXGroup;
 			children = (
 				11F6419525042AA20014C273 /* AppDelegate.swift */,
@@ -70,7 +70,7 @@
 				11F641A025042AA40014C273 /* LaunchScreen.storyboard */,
 				11F641A325042AA40014C273 /* Info.plist */,
 			);
-			path = "Fake Nameificator";
+			path = "Spy Kit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
