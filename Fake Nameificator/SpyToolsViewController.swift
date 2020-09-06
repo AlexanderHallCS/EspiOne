@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OpenWebViewController: UIViewController {
+class SpyToolsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

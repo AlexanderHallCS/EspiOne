@@ -33,7 +33,7 @@ class StartViewController: UIViewController {
                         let alert = UIAlertController(title: "Success", message: "You are the correct user!", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "Ok", style: .default) {(action: UIAlertAction) -> Void in
                             alert.removeFromParent()
-                            self.performSegue(withIdentifier: "startToOpenWeb", sender: nil)
+                            self.performSegue(withIdentifier: "startToSpyTools", sender: nil)
                         })
                         self.present(alert, animated: true, completion: nil)
                     } else {
