@@ -14,4 +14,4 @@ Checkout the DevPost/demo here!: https://devpost.com/software/espione
 
 | Embedded Web Portion |
 | ------------- |
-| [<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/210/503/datas/gallery.jpg" width="221" height="500"/>](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/210/503/datas/gallery.jpg) 
+| [<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/210/503/datas/gallery.jpg" width="241" height="500"/>](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/210/503/datas/gallery.jpg) 
